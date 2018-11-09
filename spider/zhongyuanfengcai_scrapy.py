@@ -14,7 +14,7 @@ def get_latest_url():
     return url + ret
 
 
-get_latest_url()
+# get_latest_url()
 
 
 def get_lottery_result(url):
@@ -72,5 +72,5 @@ def get_lottery_result(url):
 
 # url = "http://www.henanfucai.com/Html/Gonggao/11342.html"
 a = get_latest_url()
-print(a)
+# print(a)
 print(get_lottery_result(a))
