@@ -4,12 +4,10 @@ class Solution(object):
         :type logs: List[str]
         :rtype: List[str]
         """
-        let = sorted([x for x in logs if not x.split()[1].isdigit()], key=lambda x: x.split()[1:])
-        print(let)
-        dig = [x for x in logs if x.split()[1].isdigit()]
-        print(dig)
-        return let + dig
-
+        a, b = [], []
+        [b.append(i) if i.split(" ")[1].isdigit() else a.append(i) for i in logs]
+        a = sorted(a, key=lambda x: x.split(" ")[1:])
+        return a + b
 
 
 a = ["a1 9 2 3 1", "g1 act car", "zo4 4 7", "ab1 off key dog", "a8 act zoo"]
