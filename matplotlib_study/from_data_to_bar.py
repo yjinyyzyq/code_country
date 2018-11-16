@@ -14,8 +14,8 @@ def draw_pic(path, date):
             if day == date:
                 ret.append([second.rstrip(','), int(num.rstrip())])  # 预计最多有17280刻度线
 
-    tick_spacing = 20
     label_list, num_list = [i[0] for i in ret], [i[1] for i in ret]
+    tick_spacing = 20
     fig, ax = plt.subplots(1, 1)
     a = list(range(len(label_list)))
     plt.bar(left=a, height=num_list, width=0.4, alpha=0.8, color='red')

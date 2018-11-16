@@ -3,7 +3,7 @@ import os
 import matplotlib.pyplot as plt
 
 path = u"C://Users//wenjia//Desktop//1.txt"
-date = "2018-11-09"
+date = "2018-11-15"
 
 
 def draw_pic(path, date):
